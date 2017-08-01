@@ -1,6 +1,1 @@
-"# Belif-Charter" 
-"# Belif-Charter" 
-# Belif-Charter
-"# Belif-Charter" 
-"# Belif-Charter" 
-"# Maxine-s" 
+"# Maxine-s"
