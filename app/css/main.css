@@ -1,5 +1,5 @@
 body {
-  font-family: 'helveticaneuecyrthin', 'Helvetica Neue' , sans-serif, Arial;
+  font-family: 'Helvetica Neue', 'helveticaneuecyrthin', sans-serif, Arial;
   font-style: normal;
   position: relative;
   overflow-x: hidden;
@@ -59,7 +59,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 50px 0;
-    font-family: ltunivers, 'sans-serif'; }
+    font-family: 'Helvetica Neue', 'sans-serif'; }
     .all-catalog__sign_discover {
       text-transform: uppercase;
       color: #aaa;
@@ -621,7 +621,7 @@ body {
       margin-left: 0 !important; } }
 
 .content-description {
-  font-family: ltunivers, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-size: 1.1em;
   padding: 0 15px;
   margin-bottom: 10px;
@@ -676,7 +676,7 @@ body {
   font-size: 12px; }
 
 .content-caption-hash {
-  font-family: ltunivers, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   font-size: 8px;
   letter-spacing: 1.6px; }
@@ -717,7 +717,7 @@ body {
     .post-content {
       max-width: 100%; } }
   .post-content .back-link {
-    font-family: ltunivers, sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     margin: 15px 0;
     position: relative; }
     @media only screen and (max-width: 767px) {
@@ -777,7 +777,7 @@ body {
         margin: 0; }
     .post-content__info_date {
       margin-bottom: 10px;
-      font-family: ltunivers, 'sans-serif';
+      font-family: 'Helvetica Neue', 'sans-serif';
       letter-spacing: 1px;
       font-size: 0.9em;
       font-weight: 700;
@@ -876,7 +876,7 @@ body {
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2; }
   .post-content .shop-content-title {
-    font-family: 'ltunivers', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     text-align: center;
     text-transform: uppercase;
     color: #000;
@@ -965,13 +965,13 @@ body {
         .post-content__product .post-content-info {
           position: relative; } }
     .post-content__product_name {
-      font-family: ltunivers, sans-serif;
+      font-family: 'Helvetica Neue', sans-serif;
       text-transform: uppercase;
       color: #000;
       font-weight: 800;
       margin-bottom: 8px; }
     .post-content__product_price {
-      font-family: ltunivers, sans-serif;
+      font-family: 'Helvetica Neue', sans-serif;
       font-size: 1.1em;
       color: #999;
       letter-spacing: 3px; }
@@ -1131,7 +1131,7 @@ body {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-family: ltunivers, sans-serif; }
+    font-family: 'Helvetica Neue', sans-serif; }
     .post-side-content__info .reading-arrow {
       display: none;
       position: absolute;
@@ -1154,7 +1154,7 @@ body {
       top: 15px;
       display: block;
       text-transform: uppercase;
-      font-size: 1.0em;
+      font-size: 0.9em;
       color: #000;
       font-weight: 800;
       line-height: 1.3; }
@@ -1311,10 +1311,10 @@ a[class~="post-active"] .post-side-content__info_status {
     margin-left: 0 !important; } }
 
 .hashtag-title {
-  font-family: ltunivers, sans-serif; }
+  font-family: 'Helvetica Neue', sans-serif; }
 
 .hashtag-description {
-  font-family: ltunivers, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   margin-bottom: 30px; }
 
@@ -1381,7 +1381,7 @@ a[class~="post-active"] .post-side-content__info_status {
       width: 100%;
       bottom: -1px;
       left: -3px;
-      font-family: ltunivers, sans-serif;
+      font-family: 'Helvetica Neue', sans-serif;
       opacity: 1;
       -webkit-transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
       transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
