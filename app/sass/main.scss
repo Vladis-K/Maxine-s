@@ -13,6 +13,7 @@ $arrow-color: #444;
 
 body {
   font-family: 'helveticaneuecyrthin', 'Helvetica Neue' , sans-serif, Arial;
+  font-style: normal;
   position: relative;
   overflow-x: hidden;
   margin: 0;
@@ -68,11 +69,12 @@ body {
       flex-direction: column;
       justify-content: center;
       padding: 50px 0;
-
+      font-family: ltunivers, 'sans-serif';
       &_discover {
         text-transform: uppercase;
         color: $text-color;
         text-align: center;
+        font-size: 10px;
       }
       &_world{
         text-align: center;
@@ -84,6 +86,24 @@ body {
           text-transform: uppercase;
           font-weight: bold;
           margin: 0;
+        }
+      }
+      &_description {
+        width: 460px;
+        margin: auto;
+        text-align: center;
+        padding: 0 20px;
+
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+
+        & > h2 {
+          text-transform: uppercase;
+          font-size: 1.1em;
+          color: $text-caption;
+          letter-spacing: 0.5px;
+          line-height: 1.4em;
         }
       }
       &_social{
@@ -506,6 +526,7 @@ body {
 
 //Content Description
 .content-description {
+  font-family: ltunivers, sans-serif;
   font-size: 1.1em;
   padding: 0 15px;
   margin-bottom: 10px;
@@ -514,6 +535,10 @@ body {
   text-align: center;
   @media only screen and (max-width: 1199px) {
     font-size: 0.8em;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size: 0.7em;
+    padding: 0 5px;
   }
   @media only screen and (max-width: 767px) {
     font-size: 1.6em;
@@ -550,6 +575,13 @@ body {
   text-align: center;
   font-size: 12px;
 }
+.content-caption-hash {
+  font-family: ltunivers, sans-serif;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 1.6px;
+}
+
 .content-hashtag {
   margin-top: 10px;
   display: flex;
@@ -1140,5 +1172,138 @@ a[class~="post-active"] {
     & > i {
         font-size: 20px;
     }
+  }
+}
+
+
+//Hashtag page
+
+.hashtag-page-sidebar {
+  @media only screen and (max-width: 1240px) {
+    display: none;
+  }
+}
+
+.hashtag-content {
+  @media only screen and (max-width: 1240px) {
+    margin-left: 0 !important;
+  }
+}
+.hashtag-title {
+  font-family: ltunivers, sans-serif;
+}
+.hashtag-description {
+  font-family: ltunivers, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.hashtag-icon {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.hashtag-picture {
+  transition: all .5s ease;
+  &:hover {
+    .hashtag-bage {
+      transition: all .5s ease;
+      border: 3px solid white;
+    }
+  }
+}
+
+
+
+.hashtag-bage {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: $text-white;
+  border: 3px solid black;
+  width: 26px;
+  height: 26px;
+  text-indent: 26px;
+  border-radius: 13px;
+  padding-right: 5px;
+  line-height: 20px;
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+  @media only screen and (max-width: 767px) {
+    top: 10px;
+  }
+  .hashtag-bage-info {
+    position: relative;
+    left: -3px;
+    bottom: 0;
+    height: 26px;
+    .hashtag-logo {
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      bottom: -13px;
+      right: 100%;
+      & > a > i {
+        font-size: 9px;
+        color: $text-dark;
+      }
+    }
+    .hashtag-look-text {
+      position: relative;
+      visibility: hidden;
+      width: 100%;
+      left: -1px;
+      bottom: 6px;
+      opacity: 0;
+      font-size: 10px;
+    }
+  }
+  &:hover {
+    border: 3px solid white;
+    width: auto;
+    .hashtag-look-text {
+      visibility: visible;
+      width: 100%;
+      bottom: -1px;
+      left: -3px;
+      font-family: ltunivers, sans-serif;
+      opacity: 1;
+      transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+      top: auto;
+      color: $text-dark;
+      text-indent: 26px;
+      line-height: 20px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+  }
+}
+
+//Smooth appearance
+
+.appearance {
+  visibility: hidden;
+}
+
+
+.slide {
+  visibility: visible;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(50px)
+  }
+  100% {
+
+    opacity: 1;
+    transform: translateY(0);
   }
 }

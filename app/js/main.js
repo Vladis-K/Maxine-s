@@ -1,5 +1,6 @@
 jQuery(document).ready(function() {
 
+    appearance();
 
     //Even Hover on Page Maxine's world pictures
     $(document).on("mouseenter", ('.mx-one-half-with-content'), (function (e) {
@@ -59,5 +60,15 @@ jQuery(document).ready(function() {
 
 });
 
+//Smooth appearance
+$(window).scroll( appearance );
 
-
+function appearance() {
+    $(".appearance").each(function(){
+        var positionElements = $(this).offset().top;
+        var windowTop = $(window).scrollTop();
+        if (positionElements <= windowTop + 800) {
+            $(this).addClass("slide").delay(700);
+        }
+    });
+}
