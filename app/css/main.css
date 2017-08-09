@@ -1316,7 +1316,9 @@ a[class~="post-active"] .post-side-content__info_status {
 .hashtag-description {
   font-family: 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .hashtag-icon {
   margin-top: 40px;
